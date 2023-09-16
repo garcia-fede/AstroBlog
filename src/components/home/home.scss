@@ -1,0 +1,44 @@
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.home h1{
+    color: rgb(var(--text-light-contrast));
+}
+.home h1, .home a, .home a::before{
+    transition: .5s ease;
+}
+.home a, .home a::before{
+    color: rgb(var(--text-light-high-contrast));
+}
+.home a{
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.home a:hover{
+    color: rgb(var(--text-light));
+    scale: 1.1;
+    cursor: pointer;
+}
+.home a::before{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(var(--text-light-high-contrast));
+    bottom: 0;
+    content: '';
+}
+.home a:hover::before{
+    width: 100%;
+    background: rgb(var(--text-light));
+}

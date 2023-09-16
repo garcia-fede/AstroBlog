@@ -1,0 +1,26 @@
+//Bootstrap
+@import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+//Pages
+@import './components/home/home.scss';
+@import './components/footer/footer.scss';
+@import './components/about/about.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    //Colors in rgb values for opacity changes
+    --primary-bg: 15, 15, 15;
+    --secondary-bg: 23, 23, 23;
+    --text-light: 255, 255, 255;
+    --text-light-contrast: 180, 180, 180;
+    --text-light-high-contrast: 120, 120, 120;
+}
+//Backgrounds Sections
+.dark-bg{
+    background: radial-gradient(circle, rgba(var(--primary-bg),1) 0%, rgba(var(--secondary-bg),1) 100%);
+}
